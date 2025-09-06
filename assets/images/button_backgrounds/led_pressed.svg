@@ -1,0 +1,46 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ledPressedGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:1" />
+    </linearGradient>
+
+  </defs>
+  
+  <!-- Background rounded rectangle -->
+  <rect x="10" y="10" width="100" height="100" rx="20" ry="20" 
+        fill="url(#ledPressedGradient)"/>
+  
+  <!-- LED bulb icon (bright/on state) -->
+  <g transform="translate(60, 45)">
+    <!-- Bulb base -->
+    <rect x="-4" y="8" width="8" height="6" rx="2" ry="2" 
+          fill="#6B7280" stroke="#4B5563" stroke-width="1"/>
+    
+    <!-- Bulb glass (bright) -->
+    <circle cx="0" cy="0" r="12" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2"/>
+    <circle cx="0" cy="0" r="8" fill="#FCD34D" opacity="0.9"/>
+    
+    <!-- Filament (bright) -->
+    <g stroke="#F59E0B" stroke-width="1.5" fill="none" opacity="0.9">
+      <path d="M -4,-2 Q 0,-6 4,-2"/>
+      <path d="M -4,2 Q 0,-2 4,2"/>
+    </g>
+    
+    <!-- Light rays (bright/on) -->
+    <g stroke="#FCD34D" stroke-width="2" stroke-linecap="round" opacity="0.8">
+      <line x1="-18" y1="-6" x2="-22" y2="-8"/>
+      <line x1="-18" y1="0" x2="-22" y2="0"/>
+      <line x1="-18" y1="6" x2="-22" y2="8"/>
+      <line x1="18" y1="-6" x2="22" y2="-8"/>
+      <line x1="18" y1="0" x2="22" y2="0"/>
+      <line x1="18" y1="6" x2="22" y2="8"/>
+      <line x1="-6" y1="-18" x2="-8" y2="-22"/>
+      <line x1="0" y1="-18" x2="0" y2="-22"/>
+      <line x1="6" y1="-18" x2="8" y2="-22"/>
+    </g>
+  </g>
+  
+  <!-- Text label -->
+  <text x="60" y="90" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">LED</text>
+</svg>

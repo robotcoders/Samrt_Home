@@ -1,0 +1,45 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="laserGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6B7280;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4B5563;stop-opacity:1" />
+    </linearGradient>
+
+  </defs>
+  
+  <!-- Background rounded rectangle -->
+  <rect x="10" y="10" width="100" height="100" rx="20" ry="20" 
+        fill="url(#laserGradient)"/>
+  
+  <!-- Laser star pattern (dark/off state) -->
+  <g transform="translate(60, 45)">
+    <!-- Central star -->
+    <g fill="#4B5563" stroke="#374151" stroke-width="1">
+      <polygon points="0,-12 3,-3 12,0 3,3 0,12 -3,3 -12,0 -3,-3" />
+      <polygon points="0,-8 2,-2 8,0 2,2 0,8 -2,2 -8,0 -2,-2" fill="#6B7280"/>
+    </g>
+    
+    <!-- Laser beams (dark/off) -->
+    <g stroke="#6B7280" stroke-width="2" stroke-linecap="round" opacity="0.3">
+      <line x1="0" y1="-20" x2="0" y2="-25"/>
+      <line x1="14" y1="-14" x2="18" y2="-18"/>
+      <line x1="20" y1="0" x2="25" y2="0"/>
+      <line x1="14" y1="14" x2="18" y2="18"/>
+      <line x1="0" y1="20" x2="0" y2="25"/>
+      <line x1="-14" y1="14" x2="-18" y2="18"/>
+      <line x1="-20" y1="0" x2="-25" y2="0"/>
+      <line x1="-14" y1="-14" x2="-18" y2="-18"/>
+    </g>
+    
+    <!-- Secondary beams (dark/off) -->
+    <g stroke="#9CA3AF" stroke-width="1" stroke-linecap="round" opacity="0.2">
+      <line x1="10" y1="-10" x2="15" y2="-15"/>
+      <line x1="10" y1="10" x2="15" y2="15"/>
+      <line x1="-10" y1="10" x2="-15" y2="15"/>
+      <line x1="-10" y1="-10" x2="-15" y2="-15"/>
+    </g>
+  </g>
+  
+  <!-- Text label -->
+  <text x="60" y="90" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Laser</text>
+</svg>

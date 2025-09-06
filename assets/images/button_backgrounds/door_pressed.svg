@@ -1,0 +1,57 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="doorPressedGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:1" />
+    </linearGradient>
+
+  </defs>
+  
+  <!-- Background rounded rectangle -->
+  <rect x="10" y="10" width="100" height="100" rx="20" ry="20" 
+        fill="url(#doorPressedGradient)"/>
+  
+  <!-- Door icon (bright/open state) -->
+  <g transform="translate(60, 45)">
+    <!-- Door frame -->
+    <rect x="-12" y="-15" width="24" height="30" rx="2" ry="2" 
+          fill="#EA580C" stroke="#9A3412" stroke-width="2"/>
+    
+    <!-- Door panels (bright, indicating open) -->
+    <rect x="-10" y="-13" width="20" height="12" rx="1" ry="1" 
+          fill="#FB923C" stroke="#EA580C" stroke-width="1"/>
+    <rect x="-10" y="1" width="20" height="12" rx="1" ry="1" 
+          fill="#FB923C" stroke="#EA580C" stroke-width="1"/>
+    
+    <!-- Door handle (active state) -->
+    <circle cx="6" cy="2" r="2" fill="#FCD34D" stroke="#F59E0B" stroke-width="1"/>
+    <circle cx="6" cy="2" r="1" fill="#FEF3C7"/>
+    
+    <!-- Door hinges (active) -->
+    <rect x="-11" y="-10" width="2" height="3" rx="1" fill="#F59E0B"/>
+    <rect x="-11" y="-2" width="2" height="3" rx="1" fill="#F59E0B"/>
+    <rect x="-11" y="6" width="2" height="3" rx="1" fill="#F59E0B"/>
+    
+    <!-- Enhanced wood grain details -->
+    <g stroke="#EA580C" stroke-width="0.8" opacity="0.8">
+      <line x1="-8" y1="-11" x2="8" y2="-11"/>
+      <line x1="-8" y1="-7" x2="8" y2="-7"/>
+      <line x1="-8" y1="-3" x2="8" y2="-3"/>
+      <line x1="-8" y1="3" x2="8" y2="3"/>
+      <line x1="-8" y1="7" x2="8" y2="7"/>
+      <line x1="-8" y1="11" x2="8" y2="11"/>
+    </g>
+    
+    <!-- Light coming through (indicating door is open) -->
+    <g stroke="#FCD34D" stroke-width="1" opacity="0.6" stroke-linecap="round">
+      <line x1="12" y1="-10" x2="18" y2="-15"/>
+      <line x1="12" y1="-5" x2="18" y2="-8"/>
+      <line x1="12" y1="0" x2="18" y2="0"/>
+      <line x1="12" y1="5" x2="18" y2="8"/>
+      <line x1="12" y1="10" x2="18" y2="15"/>
+    </g>
+  </g>
+  
+  <!-- Text label -->
+  <text x="60" y="90" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Door</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="windowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6B7280;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4B5563;stop-opacity:1" />
+    </linearGradient>
+
+  </defs>
+  
+  <!-- Background rounded rectangle -->
+  <rect x="10" y="10" width="100" height="100" rx="20" ry="20" 
+        fill="url(#windowGradient)"/>
+  
+  <!-- Window icon (dark/closed state) -->
+  <g transform="translate(60, 45)">
+    <!-- Window frame -->
+    <rect x="-12" y="-12" width="24" height="24" rx="2" ry="2" 
+          fill="#4B5563" stroke="#374151" stroke-width="2"/>
+    
+    <!-- Window panes (dark) -->
+    <rect x="-10" y="-10" width="9" height="9" rx="1" ry="1" 
+          fill="#6B7280" stroke="#4B5563" stroke-width="1" opacity="0.5"/>
+    <rect x="1" y="-10" width="9" height="9" rx="1" ry="1" 
+          fill="#6B7280" stroke="#4B5563" stroke-width="1" opacity="0.5"/>
+    <rect x="-10" y="1" width="9" height="9" rx="1" ry="1" 
+          fill="#6B7280" stroke="#4B5563" stroke-width="1" opacity="0.5"/>
+    <rect x="1" y="1" width="9" height="9" rx="1" ry="1" 
+          fill="#6B7280" stroke="#4B5563" stroke-width="1" opacity="0.5"/>
+    
+    <!-- Window cross frame -->
+    <rect x="-1" y="-12" width="2" height="24" fill="#374151"/>
+    <rect x="-12" y="-1" width="24" height="2" fill="#374151"/>
+  </g>
+  
+  <!-- Text label -->
+  <text x="60" y="90" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Window</text>
+</svg>
